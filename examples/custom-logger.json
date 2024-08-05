@@ -1,0 +1,12 @@
+{
+    "endpoints": [
+        {
+            "url": "/logger/*",
+            "method": "POST",
+            "response": {
+                "type": "custom",
+                "file": "../plugins/endpoint_logger.so"
+            }
+        }
+    ]
+}

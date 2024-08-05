@@ -1,0 +1,12 @@
+{
+    "endpoints": [
+        {
+            "url": "/proto",
+            "method": "GET",
+            "response": {
+                "type": "custom",
+                "file": "protobuf_response.so"
+            }
+        }
+    ]
+}

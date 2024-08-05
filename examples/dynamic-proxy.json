@@ -1,0 +1,23 @@
+{
+    "endpoints": [
+        {
+            "url": "/dynamic-proxy/post/:test_id",
+            "method": "POST",
+            "proxy": {
+                "url": "https://jsonplaceholder.typicode.com/posts/:proxy_id",
+                "method": "GET",
+                "type": "dynamic",
+                "content_type": "application/json",
+                "url_params": [
+                    {
+                        "key": "proxy_id",
+                        "mapped": {
+                            "from": "url",
+                            "param": "test_id"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

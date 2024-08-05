@@ -1,0 +1,14 @@
+{
+    "endpoints": [
+        {
+            "url": "/proxy/posts",
+            "method": "GET",
+            "proxy": {
+                "url": "https://jsonplaceholder.typicode.com/posts",
+                "method": "GET",
+                "type": "static",
+                "content_type": "application/json"
+            }
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+issues:
+  exclude-rules:
+    - path: (.+)_test.go
+      linters:
+        - funlen
+  exclude-dirs:
+    - vendor
+    - bin
+
+linters:
+  disable-all: true
+  enable:
+    - bodyclose
+    - dogsled
+    - dupl
+    - errcheck
+    - funlen
+    - gochecknoinits
+    - goconst
+    - gocyclo
+    - gofmt
+    - goimports
+    - revive
+    - mnd
+    - goprintffuncname
+    - gosimple
+    - govet
+    - ineffassign
+    - lll
+    - misspell
+    - nakedret
+    - nolintlint
+    - rowserrcheck 
+    - staticcheck 
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - whitespace
+    - nestif
+    - testpackage
+    - durationcheck
+    - exhaustive
+    - exportloopref
+    - forcetypeassert
+    - goheader
+    - importas
+    - predeclared
+    - wastedassign
+    - gofumpt
+    - errorlint
+    - tparallel
+    - makezero
+    - prealloc 
+    - nilerr
+
+linters-settings:
+  funlen:
+    lines: 104 # default: 60
+    statements: 60 # default: 40
+  dupl:
+    threshold: 160
+  errorlint:
+    errorf: false # do not suggest `%w` to format errors
+  errcheck:
+    check-blank: true

@@ -1,0 +1,42 @@
+{
+    "endpoints": [
+        {
+            "url": "/dynamic",
+            "method": "GET",
+            "response": {
+                "status": 200,
+                "type": "dynamic",
+                "headers": null,
+                "file": "",
+                "static": null,
+                "object": [
+                    {
+                        "array": {
+                            "min": 3,
+                            "max": 3,
+                            "element": [
+                                {
+                                    "key": "test",
+                                    "random": {
+                                        "type": "string-all",
+                                        "min": 1,
+                                        "max": 100
+                                    }
+                                },
+                                {
+                                    "key": "asdads",
+                                    "random": {
+                                        "type": "integer",
+                                        "min": 1,
+                                        "max": 100
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "format": "json"
+            }
+        }
+    ]
+}

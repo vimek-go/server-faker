@@ -1,0 +1,14 @@
+{
+    "endpoints": [
+        {
+            "url": "/static",
+            "method": "GET",
+            "response": {
+                "status": 200,
+                "type": "static",
+                "file": "static-proxy.json",
+                "format": "json"
+            }
+        }
+    ]
+}

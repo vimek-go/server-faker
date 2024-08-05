@@ -1,0 +1,18 @@
+with-expecter: false
+disable-version-string: true
+mockname: "{{ .InterfaceName | camelcase }}Mock"
+filename: "{{ .InterfaceName | snakecase }}_mock.go"
+outpkg: mocks
+dir: "{{.InterfaceDir}}/internal/mocks"
+packages:
+  server-faker/internal/pkg/api:
+    config:
+    interfaces:
+      valuer:
+      Handler:
+  server-faker/internal/pkg/parser:
+    config:
+    interfaces:
+      Factory:
+      handler:
+      pluginLoader:
